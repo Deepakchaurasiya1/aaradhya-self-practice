@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;   
+
+}
+p{
+  font-size:18px; 
+
+}
+/* Navbar color change this hover */
+.nav-item .navbar-brand:hover {
+    color: #ff5b2e !important;
+}
+
+/* First Heading on H1 Tag */
+h1 {
+    font-size: 45px;
+    line-height: 57px;
+    font-weight: 700;
+
+}
+/* Navbar Font Manage */
+@media screen and (max-width: 1170px) {
+  .navbtn{
+ display: none;     
+}
+.navbar-collapse ul li a{
+font-size: 18px;
+} 
+}
+
+/* Nav Slider Button */
+.navbtn {
+    padding: 10px 30px;
+    color: #ff5b2e;
+    font-weight: 600;
+    border-radius: 20px;
+    border: solid 1px #ff5b2e;
+}
+
+.navbtn:hover {
+    color: white !important;
+    background-color: #ff5b2e
+}
+
+/* Home Slide Button */
+.homebnt {
+    padding: 10px 30px;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    border: solid 1px #ff5b2e;
+    background-color: #ff5b2e;
+
+
+}
+
+.homebnt:hover {
+    color: white;
+    background-color: #ff5b2e;
+    border: solid 1px #ff5b2e;
+}
+
+/* Home Page Owl Crousal Start Here */
+.slider-start {
+    overflow: hidden;
+
+    .slider {
+      animation: slidein 30s linear infinite;
+      white-space: nowrap;
+
+      .logos {
+        width: 100%;
+        display: inline-block;
+        margin: 0px 0;
+
+        .fab {
+          width: calc(100% / 5);
+          animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+        }
+      }
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .logos .fab {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+/* Home Page owl crousal end here */
+
+ /* Home Page H2 Tag */
+
+ h2{
+    font-size: 40px;
+    line-height: 57px;
+    font-weight: 700;
+
+ }
+ /* Aradhya Technologies Images  */
+ .img-budges {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
